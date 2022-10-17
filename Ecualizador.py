@@ -14,10 +14,10 @@ class ObjetoEcualizador:
         self.titulo = Label(text="Proyecto - Analisis de Senales Aleatorias", font=('Courier New', 14), fg="black").pack()
         self.btn1 = Button(objetoecualizador, text='Inicio', command=self.Ventana2).pack()
         self.btn2 = Button(objetoecualizador, text='Creditos', command=self.Creditos).pack()
-        self.btn3 = Button(objetoecualizador, text='Salir', command=self.Salir).pack()
-        #self.entr = Entry(objetoecualizador, textvariable=self.parametro1).pack()
-        #self.btn = Button(objetoecualizador, text='Mandarparametro', command=self.Imprimir).pack()
-        #self.btn2 = Button(objetoecualizador, text='Crear ventana2', command=self.Ventana2).pack()
+        self.btn3 = Button(objetoecualizador, text='Salir', command=root.destroy).pack()
+        self.entr = Entry(objetoecualizador, textvariable=self.parametro1).pack()
+        self.btn = Button(objetoecualizador, text='Mandarparametro', command=self.Imprimir).pack()
+        self.btn2 = Button(objetoecualizador, text='Crear ventana2', command=self.Ventana2).pack()
         
     #Imprime la variable parametro desde la ventana principal
     def Imprimir(self):
